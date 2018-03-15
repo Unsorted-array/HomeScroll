@@ -15,3 +15,17 @@
   text-decoration-style: solid;
   font-size: 100%;
 }
+.widgets{
+  margin: 2% 5%;
+}
+mat-grid-tile {
+
+  background: gray;
+}
+.FilterMenuItem{
+  margin: .90%;
+  width: 7%;
+}
+.FilterMenuItemLast{
+  margin-left: 10%;
+}

@@ -1,4 +1,4 @@
-<mat-toolbar>Umwelt
+<div><mat-toolbar>Umwelt
 
   <span class="search-icon"></span>
   <mat-icon>search</mat-icon><input height="50%" type="search" >
@@ -10,6 +10,102 @@
   </div>
   <i><mat-icon class="example-icon">list</mat-icon></i>
 
-</mat-toolbar>
+</mat-toolbar></div>
+<div class="widgets">
+  <mat-grid-list cols="4" rowHeight="2:1" gutterSize="25px">
+    <mat-grid-tile>
+      <div class="widget1">
+        <span> E-NPS</span>
+
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="widget1">
+        <span>Happiness Index</span>
+
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="widget1">
+        <span>HR Engagement Score</span>
+
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile> Flight Risk Employee</mat-grid-tile>
+  </mat-grid-list>
+
+</div>
+<div class="FilterMenu">
+  <mat-toolbar>
+    <mat-toolbar-row>
+      <i><mat-icon class="example-icon">tune</mat-icon></i>
+      <span>Filter By :</span>
+      <div style="margin-right: 3%"></div>
+      <mat-form-field class="FilterMenuItem">
+        <mat-select placeholder="Date:All">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="FilterMenuItem">
+        <mat-select placeholder="Tenure:All">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="FilterMenuItem">
+        <mat-select placeholder="Function : All">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="FilterMenuItem">
+        <mat-select placeholder="Dept:All">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="FilterMenuItem">
+        <mat-select placeholder="Branch:All">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="FilterMenuItem">
+        <mat-select placeholder="Location:All">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="FilterMenuItem">
+        <mat-select placeholder="Sub-Loc:All">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="FilterMenuItem">
+        <mat-select placeholder="Manager:All">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field class="FilterMenuItemLast">
+        <mat-select placeholder="Graph Options">
+          <mat-option *ngFor="let food of foods" [value]="food.value">
+            {{ food.viewValue }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-toolbar-row>
+  </mat-toolbar>
+</div>
 
 
