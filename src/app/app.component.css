@@ -1,0 +1,17 @@
+.search-icon{
+
+ margin: auto auto  auto 4%;
+}
+.example-icon {
+  padding: 0 14px;
+  font-size: 36px;
+}
+.example-spacer{
+  flex: 1 1 auto;
+}
+#CXO{
+  padding: 0 14px;
+  text-align: center;
+  text-decoration-style: solid;
+  font-size: 100%;
+}
